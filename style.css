@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+ 
+a {
+    text-decoration: none;
+}
+
+.fundo-imagem {
+    background: linear-gradient(to right, #fa78fa, #b278fd);
+    padding-bottom: 1px;
+    color: white;
+}
+
+.fundo-imagem::before {
+    content: "";
+    background-image: url(Imagens_icones/capa.png);
+    padding-bottom: 65px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.4;
+}
+
+header {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 22px;
+}
+
+.logo img {
+    width: 50px;
+    filter: invert(100%);
+    margin-right: 4%;
+}
+
+.logo .logo-r {
+    width: 8px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    gap: 36px;
+    font-size: 13px;
+}
+
+.seta {
+    position: absolute;
+    filter: invert(100%);
+    width: 30px;
+    bottom: 280px;
+    margin: 0 70px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.seta-voltar {
+    left: -130px;
+}
+
+.seta-avancar {
+    left: 528px;
+}
+
+#texto-principal {
+    position: relative;
+    left: -10px;
+}
+
+.principal {
+    position: relative;
+    margin-left: 29%;
+    padding-top: 15%;
+    padding-bottom: 17%;
+    font-size: 42px;
+}
+
+.animado-principal {
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+}
+
+@keyframes DeslizarEsquerda {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes DeslizarDireita {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+.deslizar-esquerda {
+    animation: DeslizarEsquerda 0.5s forwards;
+}
+
+.deslizar-direita {
+    animation: DeslizarDireita 0.5s forwards;
+}
+
+.botao {
+    font-size: 15px;
+    border-radius: 32px;
+    padding: 8px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    border-style: double;
+    margin-left: 3%;
+}
+
+#botao-um {
+    background-color: #8d02ff;
+    border-color: transparent;
+}
+
+#music-icon {
+    filter: invert(100%);
+    margin-right: 5px;
+}
+
+#botao-tres {
+    position: relative;
+    left: 190px;
+}
+
+.section-two {
+    background-color: white;
+    color: black;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagens-section-two {
+    max-width: 50%;
+    padding: 60px;
+    padding-left: 200px;
+    column-count: 2;
+}
+
+.imagens-section-two > img {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 16px;
+    width: 100%;
+    cursor: pointer;
+}
+
+#imagem-dois {
+    padding-top: 150px;
+    margin-bottom: 182px;
+}
+
+#imagem-quatro{
+    max-width: 38%;
+    margin-bottom: 32px;
+    column-count: 2;
+    margin-left: 44%;    
+}
+
+#imagem-quatro > img{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 16px;
+    width: 100%;
+}
+
+.conteudo-section-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 43%;
+    padding: 45px;
+    margin-left: 45%;
+    margin-top: -40%;
+    margin-bottom: 5%;
+    gap: 20px;
+}
+
+.titulo-section-two-main {
+    color: #8d02ff;
+    font-size: 40px;
+}
+
+.subtitulo-section-two-main {
+    color: #8d02ff;
+    font-size: 25px;
+}
+
+.titulo-section-two {
+    color: #8d02ff;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.subtitulo-section-two {
+    color: #8d02ff;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.paragrafo-section-two {
+    margin-bottom: 15px;
+}
+
+.animado {
+    position: relative;
+    left: 25%;
+    animation: Deslizar 4s forwards;
+}
+
+@keyframes Deslizar {
+    to {
+        left: 0;
+    }
+}
+
+.textos-section-three {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    padding-top: 70px;
+    gap: 10px;
+}
+
+.titulo-section-three {
+    font-size: 45px;
+    margin-bottom: 16px;
+}
+
+.subtitulo-section-three {
+    font-size: 24px;
+    color: #bdf3fa;
+}
+
+.paragrafo-section-three {
+    margin-bottom: 15px;
+}
+
+.imagens-section-three {
+    position: relative;
+    max-width: 19%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 45%;
+    margin-top: -42%;
+    margin-bottom: 5%;
+}
+
+.imagens-section-three > img {
+    width: 100%;
+    transform: rotate(12deg);
+    margin: 16px;
+    z-index: 1;
+}
+
+#imagem-two {
+    position: absolute;
+    left: 280px;
+    top: 100px;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10%;
+}
+
+.descricao-footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    margin: 7%;
+    font-size: 10px;
+}
+
+.titulo-descricao-footer {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+#icons-footer > img {
+    width: 45px;
+}
+

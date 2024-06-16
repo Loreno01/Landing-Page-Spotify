@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Projeto Prático - Loreno</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main>
+    <section id="section-one" class="fundo-imagem">
+        <header>
+            <div class="logo">
+                <img src="Imagens_icones/favicon.png" alt="">
+                <h2>Spotify</h2>
+                <img class="logo-r" src="Imagens_icones/circled-r-icon.png" alt="">
+            </div>
+            <div class="navigation">
+                <h3>Premium</h3>
+                <h3>Ajuda</h3>
+                <h3>Baixar</h3>
+                <h3>|</h3>
+                <h3>Entrar</h3>
+            </div>
+        </header> 
+        
+        <div class="principal" id="principal-um">
+            <img class="seta seta-voltar" src="Imagens_icones/voltar-icon.svg" alt="" onclick="alterarTexto(), deslizarEsquerda()">
+            <div class="animado-principal" id="animado-principal-um">
+                <h1>Música para todos</h1>
+                <button class="botao" id="botao-um"><strong>Aproveite o spotify free</strong></button>
+                <button class="botao"><strong>Obter o spotify premium</strong></button>
+            </div>
+            <img class="seta seta-avancar" src="Imagens_icones/avançar-icon.svg" alt="" onclick="alterarTexto(), deslizarDireita()">
+        </div>
+
+        <div class="principal" id="principal-dois" style="display: none;">
+            <img class="seta seta-voltar" src="Imagens_icones/voltar-icon.svg" alt="" onclick="alterarTexto(), deslizarEsquerda()">
+            <div class="animado-principal" id="animado-principal-dois">
+                <h1 id="texto-principal">As melhores rádios</h1>
+                <button class="botao" id="botao-tres"><img id="music-icon" src="Imagens_icones/music-icon.svg" alt="" ><strong>Ouça agora</strong></button>
+            </div>
+            <img class="seta seta-avancar" src="Imagens_icones/avançar-icon.svg" alt="" onclick="alterarTexto(), deslizarDireita()">
+        </div>
+    </section>
+
+    <section id="section-two">
+        <div class="imagens-section-two">
+            <img class="imagem-selecionada" src="Imagens_icones/img1.jpg" onclick="divSelecionada('imagem-um')" alt="">
+            <img class="imagem" src="Imagens_icones/img3.jpg" onclick="divSelecionada('imagem-tres')" alt="">
+            <img class="imagem" src="Imagens_icones/img2.jpg" onclick="divSelecionada('imagem-dois')" alt="">
+            <img class="imagem" src="Imagens_icones/img4.jpg" onclick="divSelecionada('imagem-quatro')" alt="">
+        </div>
+        <div class="conteudo-section-two">
+            <h2 class="titulo-section-two-main">O que o spotify tem?</h2>
+            
+            <h3 class="subtitulo-section-two-main">Músicas</h3>
+            <p class="paragrafo-section-two-main"> O Spotify tem milhões de músicas. Escute seus sons favoritos, 
+                descubra novas músicas e reúna seus favoritos em um só lugar.</p>
+            
+            <h3 class="subtitulo-section-two-main">Playlists</h3>
+            <p class="paragrafo-section-two-main">No Spotify você encontra uma playlist para cada momento. 
+                Todas feitas por fanáticos e especialistas da música.</p>
+            
+            <h3 class="subtitulo-section-two-main">Novos lançamentos</h3>
+            <p class="paragrafo-section-two-main">Escute os novos lançamentos de singles e álbuns da semana e veja 
+                o que está bombando no Top 50.</p>
+        </div>
+
+        <div class="conteudo-section-two" id="imagem-um" style="display: none;">
+            <h2 class="titulo-section-two">O que é o Lorem Ipsun?</h2>
+            
+            <h3 class="subtitulo-section-two">Porque é que o usamos?</h3>
+            <p class="paragrafo-section-two">Letraset, que continham passagens com lorem ipsum, e mais
+                recentemente com os programas de publicação como o Aidus PageMaker
+                que incluem versões de lorem ipsum.</p>
+            
+            <h3 class="subtitulo-section-two">De onde é que ele vem?</h3>
+            <p class="paragrafo-section-two">Letraset, que continham passagens com lorem ipsum, e mais
+                recentemente com os programas de publicação como o Aidus PageMaker
+                que incluem versões de lorem ipsum.</p>
+            
+            <h3 class="subtitulo-section-two">Onde posso arranjar algum?</h3>
+            <p class="paragrafo-section-two">Letraset, que continham passagens com lorem ipsum, e mais
+                recentemente com os programas de publicação como o Aidus PageMaker
+                que incluem versões de lorem ipsum.</p>
+        </div>
+
+        <div class="conteudo-section-two" id="imagem-dois" style="display: none;">
+            <h2 class="titulo-section-two">O que é o Lorem Ipsun?</h2>
+            
+            <h3 class="subtitulo-section-two">Porque é que o usamos?</h3>
+            <p class="paragrafo-section-two">Letraset, que continham passagens com lorem ipsum, e mais
+                recentemente com os programas de publicação como o Aidus PageMaker
+                que incluem versões de lorem ipsum.</p>
+        </div>
+
+        <div class="conteudo-section-two" id="imagem-tres" style="display: none;">
+            <h2 class="titulo-section-two animado">O que é o Lorem Ipsun?</h2>
+            
+            <h3 class="subtitulo-section-two">Porque é que o usamos?</h3>
+            <p class="paragrafo-section-two">Letraset, que continham passagens com lorem ipsum, e mais
+                recentemente com os programas de publicação como o Aidus PageMaker
+                que incluem versões de lorem ipsum.</p>
+            
+            <h3 class="subtitulo-section-two animado">De onde é que ele vem?</h3>
+            <p class="paragrafo-section-two">Letraset, que continham passagens com lorem ipsum, e mais
+                recentemente com os programas de publicação como o Aidus PageMaker
+                que incluem versões de lorem ipsum.</p>
+            
+            <h3 class="subtitulo-section-two">Onde posso arranjar algum?</h3>
+            <p class="paragrafo-section-two">Letraset, que continham passagens com lorem ipsum, e mais
+                recentemente com os programas de publicação como o Aidus PageMaker
+                que incluem versões de lorem ipsum.</p>
+        </div>
+
+        <div class="conteudo-section-two" id="imagem-quatro" style="display: none;">
+            <img src="Imagens_icones/1.jpeg" alt="">
+            <img src="Imagens_icones/3.jpeg" alt="">
+            <img src="Imagens_icones/2.jpeg" alt="">
+            <img src="Imagens_icones/4.jpeg" alt="">
+        </div>
+    </section>
+
+    <section  class="fundo-imagem" id="section-three">
+        <div class="textos-section-three">
+            <h2 class="titulo-section-three">Fácil</h2>
+            
+            <h3 class="subtitulo-section-three">Buscar</h3>
+            <p class="paragrafo-section-three">Já sabe o que quer escutar? 
+                É só procurar e apertar o play.</p>
+            
+            <h3 class="subtitulo-section-three">Navegar</h3>
+            <p class="paragrafo-section-three">Veja os novos lançamentos, o que está
+                bombando nas paradas e as melhores
+                playlists para o seu momento.</p>
+            
+            <h3 class="subtitulo-section-three">Descobrir</h3>
+            <p class="paragrafo-section-three">Curta músicas novas toda segunda-feira
+                com uma playlist personalizada pra você. Ou relaxe e curta uma das rádios.</p>
+        </div>
+        <div class="imagens-section-three">
+            <img src="Imagens_icones/iphone1.png" alt="">
+            <img id="imagem-two" src="Imagens_icones/iphone2.png" alt="">
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="logo">
+        <img src="Imagens_icones/favicon.png" alt="">
+        <h2>Spotify</h2>
+        <img class="logo-r" src="Imagens_icones/circled-r-icon.png" alt="">
+    </div>
+    <div class="descricao-footer" id="descricao-um">
+        <h2 class="titulo-descricao-footer">Company</h2>
+        <h3>Sobre</h3>
+        <h3>Empregos</h3>
+        <h3>Imprensa</h3>
+        <h3>Novidades</h3>
+    </div>
+    <div class="descricao-footer" id="descricao-dois">
+        <h2 class="titulo-descricao-footer">Comunidades</h2>
+        <h3>Artistas</h3>
+        <h3>Desenvolvedores</h3>
+        <h3>Marcas</h3>
+    </div>
+    <div class="descricao-footer" id="descricao-tres">
+        <h2 class="titulo-descricao-footer">Links Úteis</h2>
+        <h3>Ajuda</h3>
+        <h3>Presentes</h3>
+        <h3>Player na web</h3>
+    </div>
+    <div id="icons-footer">
+        <img src="Imagens_icones/facebook.png" alt="">
+        <img src="Imagens_icones/instagram.png" alt="">
+        <img src="Imagens_icones/twitter.png" alt="">
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
